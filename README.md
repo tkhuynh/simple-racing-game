@@ -1,6 +1,5 @@
 ##simple-racing-game
-Two players choose their cars, set a max score and each will have an asigned key to press in order to move their car until one car passes the finished line. Will play until one reach max score.
-For Advanced
+Two players choose their cars, each will have an asigned key to press in order to move their car until one car passes the finished line.
 
 ##Technologies Used
 - HTML/CSS
