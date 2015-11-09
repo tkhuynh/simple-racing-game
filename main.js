@@ -28,6 +28,7 @@ $(document).ready(function(){
   $("#beginner").click(function(){
     $(".beginner-rule").remove();
     $(".player1").show();
+    $(".player2 #getName").addClass("disabled");
     $(".player1 #getName").click(function(){
       $name1 = getValFromInput("Player 1", $("input.player1"));
       $('div.player1').html("<h3><span class='label label-warning player1'>"+ $name1 +"</span></h3>");
@@ -37,6 +38,9 @@ $(document).ready(function(){
         $(".racing-road #car1").append(this);
         $(".car-options").slideUp();
         $(this).off("click");
+        $(".player2 #getName").removeClass("disabled");
+      });
+    });
         $(".player2").show();
         $(".player2 #getName").click(function(){
           $name2 = getValFromInput("Player 2", $("input.player2"));
@@ -47,15 +51,12 @@ $(document).ready(function(){
             $(".racing-road #car2").append(this);
             $(".car-options").slideUp();
             $(this).off("click");
-            $(".level").hide();
             $("#finish-line").append("<img src='finish-line.png'>");
             $(".middle-column").append("<button type='button' class='btn btn-info btn-block' id='start'>Start</button>");
             $(".middle-column").append("<button type='button' class='btn btn-info btn-block' id='playAgain'>Play Again</button>");
             $(".middle-column").append("<div id='annoucement'></div>");
           });
         });
-      });
-    });
   });
   var finishLinePosition = $(window).width() - 230;
   $("#finish-line").css("right", finishLinePosition);
