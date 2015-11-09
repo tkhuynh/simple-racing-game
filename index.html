@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- set viewport to device width to make site responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- bootstrap css -->
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- font links -->
+  <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+
+  <!-- custom styles -->
+  <link rel="stylesheet" type="text/css" href="main.css">
+
+  <title>Ultimate Race</title>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 text-center title">
+        <h1><span><img src="flag.gif" class="flag"></span><span>Ultimate Race</span><span><img src="flag.gif" class="flag"></h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <marquee behavior="scroll" direction="left" scrollamount="20" class="banner"><h2>Welcome to the Ultimate Race 2015</h2></marquee>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <div class="player1">
+          <div class="alert alert-warning">
+            <strong>Player 1!</strong> Please enter your name and pick your car.
+          </div>
+          <input type="text" class="form-control player1" placeholder="Enter your name.">
+          <button type="button" class="btn btn-warning btn-block player1" id="getName">Save Name</button>
+        </div>
+      </div>
+      <div class="col-md-4 middle-column text-center">
+        <button type="button" class="btn btn-warning btn-block" id="beginner">Beginner</button>
+        <div class="beginner-rule">
+          <p>Player 1 assigned keys: S<br>
+            Player 2 asgigned keys: 5<br>
+            Press assigned key to move the car.</p>
+        </div>
+        <div class="car-options">
+          <img src="gray.gif">
+          <img src="white2.gif">
+          <img src="orange.gif">
+          <img src="white3.gif">
+          <img src="red.gif">
+          <img src="white.gif">
+        </div>  
+      </div>
+      <div class="col-md-4 text-center">
+        <div class="player2">
+          <div class="alert alert-warning">
+            <strong>Player 2!</strong> Please enter your name and pick your car.
+          </div>
+          <input type="text" class="form-control player2" placeholder="Enter your name.">
+          <button type="button" class="btn btn-warning btn-block player2" id="getName">Save Name</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid road-holder">
+    <div class="row">
+      <div class="col-md-12 racing-road">
+        <div id="finish-line"></div>
+        <div id="car1"></div>
+        <div id="car2"></div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- jquery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <!-- handlebars -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.min.js"></script>
+
+  <!-- custom script -->
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>

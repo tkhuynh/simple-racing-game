@@ -1,0 +1,74 @@
+
+h1 {
+	font-family: 'Press Start 2P', cursive;
+}
+h3 {
+	font-size: 30px;
+}
+.flag {
+	height: 75px;
+	width: auto;
+	padding: 0px 15px 0px 15px;
+}
+.banner {
+	background-color: #C0C0C0;
+	height: 100px;
+}
+.banner h2 {
+	margin-top: 35px;
+}
+.player1>input, .player1>button, .player2>input, .player2>button {
+	width: 200px;
+	display: block;
+	margin: 5px auto;
+	text-align: center;
+}
+.middle-column>.level>.setMaxScore>input {
+	text-align: center;
+}
+.middle-column button {
+	width: 300px;
+	margin: 0 auto;
+}
+.middle-column h1 {
+	font-size: 40px;
+	font-family: 'Press Start 2P', cursive;
+}
+.middle-column h2 {
+	font-size: 40px;
+	font-family: 'Press Start 2P', cursive;
+}
+.beginner-rule {
+	background-color: #76DCF3;
+	border-radius: 5px;
+	border: 1px solid none;
+	margin: 0px;
+	width: 300px;
+	margin: 0 auto;
+}
+.beginner-rule p {
+	font-size: 16px;
+	color: white;
+	padding: 4px 5px 4px 5px;
+	margin: 0px;
+}
+.road-holder {
+	margin-top: 50px;
+}
+#car1>img, #car2>img {
+      position: absolute;
+      left: 10px;
+}
+#car2>img {
+      top: 100px;
+}
+#finish-line>img {
+	height: 175px;
+	float: right;
+	margin-right: 230px;
+}
+@media (max-width: 750px) {    
+    span {
+    	display: block;
+    }
+}
