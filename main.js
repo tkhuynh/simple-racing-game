@@ -71,11 +71,11 @@ $(document).ready(function(){
     $(".middle-column>#playAgain").addClass("disabled");
     setTimeout (function(){
       $(window).on("keypress",function(e){ 
-        if (e.keyCode === 115) {
+        if (e.keyCode === 65 || e.keyCode === 97) {
           $("#car1>img").animate({left: "+="+increment+"px"},10);
           count1++;
         }
-        if (e.keyCode === 53) {
+        if (e.keyCode === 76 || e.keyCode === 108) {
           $("#car2>img").animate({left: "+="+increment+"px"},10);
           count2++;
         }
